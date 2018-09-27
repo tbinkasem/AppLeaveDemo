@@ -12,6 +12,7 @@ import { DetailPage } from '../pages/detail/detail';
 import { LoginPage } from '../pages/login/login';
 import { LeavePage } from '../pages/leave/leave';
 import { LoginServiceProvider } from '../providers/login-service/login-service';
+import { LeaveStoryPage } from '../pages/leave-story/leave-story';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { LoginServiceProvider } from '../providers/login-service/login-service';
     ListPage,
     DetailPage,
     LoginPage,
-    LeavePage
+    LeavePage,
+    LeaveStoryPage
   ],
   imports: [
     BrowserModule,
@@ -33,7 +35,8 @@ import { LoginServiceProvider } from '../providers/login-service/login-service';
     ListPage,
     DetailPage,
     LoginPage,
-    LeavePage
+    LeavePage,
+    LeaveStoryPage
   ],
   providers: [
     StatusBar,

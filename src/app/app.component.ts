@@ -8,6 +8,7 @@ import { ListPage } from '../pages/list/list';
 import { DetailPage } from '../pages/detail/detail';
 import { LoginPage } from '../pages/login/login';
 import { LeavePage } from '../pages/leave/leave';
+import { LeaveStoryPage } from '../pages/leave-story/leave-story';
 
 @Component({
   templateUrl: 'app.html'
@@ -28,7 +29,8 @@ export class MyApp {
       { title: 'List', component: ListPage },
       { title: 'ระเบียบการลา', component: DetailPage },
       { title: 'เข้าสู่ระบบ', component: LoginPage },
-      { title: 'การลา', component: LeavePage }
+      { title: 'การลา', component: LeavePage },
+      { title: 'ประวัติการลา', component: LeaveStoryPage }
     ];
 // 9045 = 3296
 // 9595 = 2300

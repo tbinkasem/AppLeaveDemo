@@ -1,12 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the LeavePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
+import { LoginPage } from '../login/login';
 
 @IonicPage()
 @Component({
@@ -15,11 +9,24 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class LeavePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  leave: any;
+
+  constructor(public alertCtrl: AlertController,
+    public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad LeavePage');
+  showAlert(){
+    let alert = this.alertCtrl.create({
+      title: 'Please Login!!',
+      subTitle: 'You not Login System',
+      buttons: [{
+        text: 'OK',
+        handler: data => {
+          this.navCtrl.setRoot(LoginPage);
+        }
+      }]
+    });
+    alert.present();
   }
 
 }

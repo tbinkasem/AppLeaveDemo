@@ -1,0 +1,48 @@
+<ion-header>
+
+  <ion-navbar>
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>leaveStory</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <form action="">
+    <ion-list >
+      <ion-item>
+        <ion-label>To: </ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+    </ion-list>
+    <ion-list radio-group>
+      <ion-list-header color="light">
+        Subject
+      </ion-list-header>
+      <ion-item>
+        <ion-label>Sick</ion-label>
+        <ion-radio value="sick"></ion-radio>
+      </ion-item>
+      <ion-item>
+          <ion-label>Business</ion-label>
+          <ion-radio value="busi"></ion-radio>
+      </ion-item>
+      <ion-item>
+          <ion-label>Interest</ion-label>
+          <ion-radio value="rest"></ion-radio>
+      </ion-item>
+    </ion-list>
+    <ion-list >
+      <ion-item>
+        <ion-label floating>Detail</ion-label>
+        <ion-textarea row="4" style="border: 1px solid #0f0f0f"></ion-textarea>
+      </ion-item>
+    </ion-list>
+    <ion-list >
+      <button ion-button block>Send Leave Order</button>
+    </ion-list>
+  </form>
+</ion-content>
