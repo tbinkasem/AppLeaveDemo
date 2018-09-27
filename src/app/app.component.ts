@@ -6,6 +6,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { DetailPage } from '../pages/detail/detail';
+import { LoginPage } from '../pages/login/login';
+import { LeavePage } from '../pages/leave/leave';
 
 @Component({
   templateUrl: 'app.html'
@@ -24,9 +26,13 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HomePage },
       { title: 'List', component: ListPage },
-      { title: 'Detail', component: DetailPage }
+      { title: 'ระเบียบการลา', component: DetailPage },
+      { title: 'เข้าสู่ระบบ', component: LoginPage },
+      { title: 'การลา', component: LeavePage }
     ];
-
+// 9045 = 3296
+// 9595 = 2300
+// f1@winperform.com
   }
 
   initializeApp() {

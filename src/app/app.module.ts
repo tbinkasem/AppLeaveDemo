@@ -9,13 +9,18 @@ import { ListPage } from '../pages/list/list';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { DetailPage } from '../pages/detail/detail';
+import { LoginPage } from '../pages/login/login';
+import { LeavePage } from '../pages/leave/leave';
+import { LoginServiceProvider } from '../providers/login-service/login-service';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     ListPage,
-    DetailPage
+    DetailPage,
+    LoginPage,
+    LeavePage
   ],
   imports: [
     BrowserModule,
@@ -26,12 +31,15 @@ import { DetailPage } from '../pages/detail/detail';
     MyApp,
     HomePage,
     ListPage,
-    DetailPage
+    DetailPage,
+    LoginPage,
+    LeavePage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    LoginServiceProvider
   ]
 })
 export class AppModule {}
