@@ -4,14 +4,15 @@
       <button ion-button menuToggle>
           <ion-icon name="menu"></ion-icon>
         </button>
-    <ion-title>leave</ion-title>
+    <ion-title>Order Leave</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-    <form action="">
+    <h2>LEAVE ORDER</h2>
+    <form>
         <ion-list >
           <ion-item>
             <ion-label>To: </ion-label>
@@ -38,11 +39,11 @@
         <ion-list >
           <ion-item>
             <ion-label floating>Detail</ion-label>
-            <ion-textarea row="4" style="border: 1px solid #0f0f0f"></ion-textarea>
+            <ion-textarea row="2" style="border: 1px solid #0f0f0f"></ion-textarea>
           </ion-item>
         </ion-list>
         <ion-list >
-          <button ion-button block>Send Leave Order</button>
+          <button ion-button block (click)="showAlert()">Send Leave Order</button>
         </ion-list>
       </form>
 </ion-content>

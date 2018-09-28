@@ -8,7 +8,7 @@ export class LoginServiceProvider {
     console.log('Hello LoginServiceProvider Provider');
   }
 
-  login(user, password){
+  doLogin(user, password){
     let url = "http://localhost/ionic/dologin.php";
     let formLogin = new FormData();
     formLogin.append('username', user);
